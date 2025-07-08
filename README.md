@@ -27,7 +27,7 @@ MultiTTS-Web-Forwarder is a full-stack application with a separated frontend (Vu
 
 ### 1. 克隆项目 | Clone the repository
 ```bash
-git clone https://github.com/你的用户名/MultiTTS-Web-Forwarder.git
+git clone https://github.com/PBBT00/MultiTTS-Web-Forwarder.git
 cd MultiTTS-Web-Forwarder
 ```
 
