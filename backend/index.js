@@ -88,6 +88,18 @@ app.post('/api/open-editor', (req, res) => {
   });
 });
 
+// 检查语音服务连通性
+app.get('/api/ping', async (req, res) => {
+  try {
+    const baseUrl = getBaseUrl(req);
+    // 只请求 /voices 路由，判断服务是否在线
+    await axios.get(`${baseUrl}/voices`, { timeout: 2000 });
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ success: false, error: '无法连接到语音服务', detail: err.message });
+  }
+});
+
 app.listen(port, () => {
   const host = process.env.VOICE_HOST || '未指定（由前端传递）';
   const voicePort = process.env.VOICE_PORT || '8774';

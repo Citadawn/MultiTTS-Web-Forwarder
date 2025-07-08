@@ -58,6 +58,13 @@ async function handleRefresh() {
     ElMessage.error("请输入合法的IPv4地址，如 192.168.1.100");
     return;
   }
+  // 新增：先检测连通性
+  try {
+    await axios.get(`${getBackendBaseUrl()}/ping`, { params: { host: form.host } });
+  } catch (e) {
+    ElMessage.error("无法连接到语音服务，请检查IP和服务是否开启");
+    return;
+  }
   await fetchVoices();
 }
 
