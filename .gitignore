@@ -1,0 +1,22 @@
+# Node
+backend/node_modules/
+frontend/node_modules/
+backend/dist/
+frontend/dist/
+
+# Env files
+*.env
+*.env.*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archives
+*.zip
+
+# VSCode
+.vscode/ 
