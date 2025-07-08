@@ -37,6 +37,7 @@ cd MultiTTS-Web-Forwarder
 ```bash
 cd frontend
 npm install
+npm install axios # 如遇 axios 相关报错请手动安装
 ```
 
 #### 后端 | Backend
