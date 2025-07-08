@@ -20,3 +20,6 @@ Thumbs.db
 
 # VSCode
 .vscode/ 
+
+# 忽略后端的临时验证文件
+backend/text.txt 
