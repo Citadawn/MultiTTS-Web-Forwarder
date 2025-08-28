@@ -1,6 +1,4 @@
-# MultiTTS-Web-Forwarder
-
-## MultiTTS 网页转发器
+## MultiTTS 网页转发器（MultiTTS-Web-Forwarder）
 
 ---
 
